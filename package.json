@@ -1,12 +1,15 @@
 {
-  "name": "project1",
-  "version": "0.1.0",
+  "name": "real-time-polls",
+  "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy"
   },
   "dependencies": {
     "@prisma/client": "^5.19.1",
